@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+    <!--<center>-->
+    <div class="form-container">
+        <header class="header">
+            <h1 id="title">Developers Survey Form</h1>
+            <p id="description">
+                Thank you for taking the time to help us know the about world wide developers
+            </p>
+        </header>
+         <form id="survey-form" autocomplete="off">
+            <div class="group">
+                <label for="name" id="name-label">Name :-</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Type your name here"
+                  required
+                />
+            </div>
+            <div class="group">
+                <label for="email" id="email-label">Email :-</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Type your email here"
+                  required
+                />
+            </div>
+            <div class="group">
+                <label for="number" id="number-label">Age :-</label>
+                <input
+                  type="number"
+                  id="number"
+                  min="10"
+                  max="99"
+                  placeholder="Type your age here"
+                />
+            </div>
+            <div class="group">
+                <p class="labeltext">Nationality :-</p>
+                <select name="Country" id="dropdown">
+                    <option value="India">Indian</option>
+                    <option value="USA">American</option>
+                    <option value="Australia">Australian</option>
+                    <option value="Iran">Iranian</option>
+                    <option value="Russia">Russian</option>
+                    <option value="Russia">Other</option>
+                </select>
+            </div>
+            <div class="group">
+                <p class="labeltext labeltextresponse">Developer :-</p>
+                <label><input type="radio" name="Role" value="Male" />Frontend</label>
+                <label
+                ><input type="radio" name="Role" value="Female" />Backend</label>
+                <label
+                  ><input type="radio" name="Role" value="Both" />Fullstack</label
+                >
+              </div>
+              <div class="group">
+                <p class="labeltext labeltextresponse"> Qualification:-</p>
+                <label><input type="checkbox" name="Role" value="10+2" />10+2</label>
+                <label
+                  ><input type="checkbox" name="Role" value="Graduation" />Graduation</label
+                >
+                <label
+                  ><input type="checkbox" name="Role" value="Degree" />Degree</label
+                >
+              </div>
+              <div class="group">
+                <p class="labeltext">Describe about you :-</p>
+                <textarea id="comments" name="comments"></textarea>
+              </div>
+              <div class="group">
+                <button type="submit" id="submit">Submit</button>
+              </div>
+         </form>
+    </div>
+</body>
+</html>
